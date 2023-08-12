@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Prototype CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+        .pre-css,
+        .code-css {
+            font-family: 'Syne Mono', monospace !important;
+        }
+
+        .body-css {
+            /*   html,   */
+            /*            max-width: 100% !important;*/
+            max-width: 800px !important;
+            overflow: auto;
+            margin: 10px auto;
+        }
+
+        .body-css {
+/*            min-height: calc((1vw + 1vh) * 75);*/
+            box-shadow: 0 0 0 black, 0 0 6em #8a4d0f inset;
+            background: #fffef0;
+            padding: 2em;
+        }
+
+/*            :not(header):not(main):not(footer):not(section) */
+        *:not(html):not(body):not(main){
+            font-family: 'Caveat', cursive;
+            font-size: 1.25rem;
+            background: transparent;
+            padding: 0.5rem 0.5rem;
+            margin: .5rem .25rem .25rem;
+            color: #41403E;
+            outline: none;
+            box-shadow: 1em 1.5em 1.5em -1em rgba(0, 0, 0, 0.5);
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-sizing: border-box;
+            border: solid 0.1em #4140344E;
+            /*            width:fit-content;*/
+            max-width: 99%;
+            overflow: hidden;
+        }
+
+        /* Media */
+        .img-css,
+        .video-css,
+        .iframe-css {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        ::cue {
+            color: #d9e365;
+            background-color: rgba(0, 0, 0, 0.7);
+            font-family: 'Syne Mono', monospace;
+
+            font-size: 2rem;
+        }
+
+
+        /* Rotations :not(header):not(main):not(footer):not(main)   */
+/*
+        *:nth-child(odd) *:not(html):not(body):not(main)   {
+            transform: rotate(2deg);
+        }
+
+        *:nth-child(even) *:not(html):not(body):not(main)  {
+            transform: rotate(-2deg);
+        }
+*/
+
+        hr {
+            width: 50% !important;
+            padding: 0 !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            border: dotted gray .1rem !important;
+        }
+
+        .h1-css {
+            font-size: 2rem !important;
+        }
+
+        .h2-css {
+            font-size: 1.75rem !important;
+        }
+
+        .h3-css {
+            font-size: 1.5rem !important;
+        }
+
+        .h4-css {
+            font-size: 1.25rem !important;
+        }
+
+        .h5-css {
+            font-size: 1.15rem !important;
+        }
+
+        .h6-css {
+            font-size: 1.05rem !important;
+        }
+
+        .button-css,
+        .input-css[type="button"],
+        .input-css[type="reset"],
+        .input-css[type="submit"] {
+            box-shadow: #8080803d .5rem .5em !important;
+        }
+        
+        .button-css:hover {
+            cursor:pointer;
+            background: #e1e0d6;
+            text-decoration: underline;
+            -webkit-transform: scale(1.2);
+        }
+
+        .ol-css {
+            list-style-type: lower-roman;
+            list-style-position: inside;
+        }
+
+        .ul-css {
+            list-style-type: square;
+            list-style-position: inside;
+        }
+
+        .select-css {
+            overflow: auto !important;
+        }
+
+        /*        ****************************/
+        header {
+            text-align: left;
+            margin: 10px auto;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        nav {
+            text-align: center;
+        }
+        /*        !Important    */
+        .button-selected {
+            background: #e1e0d6;
+            text-decoration: underline;
+            transform: scale(1.2) !important;
+        }
+
+        footer h4 {
+            text-align: center;
+        }
+        
+        /*        Unique to this page   */
+        .center {
+            display: block;
+            margin: 0 auto !important;
+        }
+        
+        .ul-css {
+            width: fit-content;
+            margin-left: 50px;
+        }
+
+    </style>
+
+</head>
+
+<body class="body-css">
+
+    <header>Header
+        <h1 class="h1-css">3D Printers</h1>
+        <!--
+             >History
+             >Types of 3D Printing
+             >Locations to use a 3D printer
+             >Purchasing Guide
+             >Calibrating your 3d Printer
+             >Resources
+-->
+        <nav>
+            <button class="button-css" onclick="window.location.href='JMobley_Final_Wire.html';">Main</button>
+            <button class="button-css" onclick="window.location.href='history.html';">History</button>
+            <button class="button-css button-selected" onclick="window.location.href='types.html';">Types</button>
+            <button class="button-css" onclick="window.location.href='locations.html';">Locations</button>
+            <button class="button-css" onclick="window.location.href='purchasing.html';">Purchasing</button>
+            <button class="button-css" onclick="window.location.href='calibrating.html';">Calibrating</button>
+            <button class="button-css" onclick="window.location.href='resources.html';">Resources</button>
+        </nav>
+    </header>
+
+    <main>Main 1
+                <h2>Types</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Tempus quam pellentesque nec nam aliquam sem et. Aenean et tortor at risus viverra adipiscing at in. Tempor commodo ullamcorper a lacus vestibulum sed arcu non.</p>
+                <p>this content was from https://all3dp.com/1/types-of-3d-printers-3d-printing-technology/</p>
+                <p>This may either have to be culled to shorten or each section needs to collapse until clicked on by user</p>
+                
+                <h4 class="h4-css">MATERIAL EXTRUSION</h4>
+                <ul class="ul-css">
+                    <li>Fused Deposition Modeling (FDM)</li>
+                    <li>3D Bioprinting</li>
+                    <li>Construction 3D Printing</li>
+                </ul>
+                <h4 class="h4-css">VAT POLYMERIZATION</h4>
+                <ul class ="ul-css">
+                    <li>Stereolithography (SLA)</li>
+                    <ul class="ul-css">
+                        <li>Microstereolithography (µSLA)</li>
+                        <li>Two-Photon Polymerization (TPP)</li>
+                    </ul>
+                    <li>Digital Light Processing (DLP)</li>
+                    <ul class="ul-css">
+                        <li>Projection Microstereolithography (PµSL)</li>
+                        <li>Lithography-based Metal Manufacturing (LMM)</li>
+                    </ul>
+                    <li>Liquid Crystal Display (LCD)</li>
+                </ul>
+                <h4 class="h4-css">POWDER BED FUSION</h4>
+                <ul class ="ul-css">
+                    <li>Selective Laser Sintering (SLS)</li>
+                    <ul class="ul-css">
+                        <li>Micro Selective Laser Sintering (μSLS)</li>
+                    </ul>
+                    <li>Laser Powder Bed Fusion (LPBF)</li>
+                    <li>Electron Beam Melting (EBM)</li>
+                </ul>
+                <h4 class="h4-css">MATERIAL JETTING</h4>
+                <ul class ="ul-css">
+                    <li>Material Jetting (M-Jet)</li>
+                    <ul class ="ul-css">
+                        <li>Aerosol Jet</li>
+                        <li>Plastic Freeforming </li>
+                    </ul>
+                    <li>NanoParticle Jetting (NPJ)</li>
+                </ul>
+                <h4 class="h4-css">BINDER JETTING</h4>
+                <ul class ="ul-css">
+                    <li>Metal Binder Jetting</li>
+                    <li>Plastic Binder Jetting (MJF, HSS, SAF)</li>
+                    <li>Sand Binder Jetting</li>
+                </ul>
+                <h4 class="h4-css">DIRECTED ENERGY DEPOSITION</h4>
+                <ul class ="ul-css">
+                    <li>Laser Directed Energy Deposition</li>
+                    <li>Electron Beam Directed Energy Deposition</li>
+                    <li>Wire Directed Energy Deposition</li>
+                    <li>Cold Spray</li>
+                    <li>Molten Direct Energy Deposition</li>
+                </ul>
+                <h4 class="h4-css">SHEET LAMINATION</h4>
+                <ul class ="ul-css">
+                    <li>Laminated Additive Manufacturing</li>
+                    <ul class ="ul-css">
+                        <li>Viscous Lithography Manufacturing (VLM)</li>
+                        <li>Composite Based Additive Manufacturing (CBAM)</li>
+                        <li>Selective Lamination Composite Object Manufacturing (SLCOM)</li>
+                    </ul>
+                </ul>
+    </main>
+
+    <footer>Footer
+        <h4>&copy;JAM Consulting 2023<br>by: Jeff Mobley</h4>
+    </footer>
+
+</body>
