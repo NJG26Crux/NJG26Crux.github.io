@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    color: blue;
+    border: 2px solid red;
+}
+
+main {
+    width: 800px;
+    height: 600px;
+    background: lightblue;
+}
