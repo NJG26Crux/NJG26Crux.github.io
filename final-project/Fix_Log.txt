@@ -1,0 +1,57 @@
+Fixed: "Home" under hamburger to be centered above rest of li items
+
+foundations.css
+line: 4539
+
+.menu.simple li + li {
+ 	margin-left: 1rem;
+	}
+
+Removed: "+ li"
+
+Fixed Body Container to match Header width:
+
+app.css
+line: 439
+
+.flexible-article-images-container {
+    width: calc((100% - 571px) / 3 + 581px);
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+Made Header Fixed/Sticky
+
+app.css
+line: 445
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+Made Footer Fixed/Sticky & matched color
+
+app.css
+line: 445
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #2c3840;
+}
+
+Fixed images not being scaled (too Big) to width on Mobile
+
+app.css
+line: 479 inside of "@media screen and (max-width: 39.9375em)"
+
+.flexible-article-image-left, .flexible-article-image-full, .flexible-article-image-right {
+        max-width: 95%;
+        padding-left: 12px;
+        margin: 0 auto; 
+    }
+
