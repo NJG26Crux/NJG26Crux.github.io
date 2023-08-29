@@ -8,6 +8,7 @@
 .topbar-responsive .topbar-responsive-logo {
   color: #fefefe;
   vertical-align: middle;
+    padding-left: 10px;
 }
 
 .topbar-responsive .menu {
@@ -315,9 +316,9 @@ body {
 }
 
 .flexible-article-images-container, main {
-    width: calc((100% - 704px) / 3 + 704px);
+    width: calc((100% - 704px) / 3 + 714px);
     margin: 0 auto 41px;
-    padding: 0 10px;
+/*    padding: 0 10px;*/
 /*    background: white;*/
 }
 
@@ -417,7 +418,7 @@ body {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: calc((100% - 587px) / 3 + 587px);
+    width: calc((100% - 704px) / 3 + 644px);
 /*  width: 80%;  Could be more or less, depending on screen size */
 }
 
