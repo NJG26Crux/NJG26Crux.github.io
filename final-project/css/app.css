@@ -296,6 +296,7 @@
 /*  Start of My CSS */
 
 body {
+    background: #cccccc;
 /*
     display: flex;
     flex-wrap: nowrap;
@@ -311,13 +312,26 @@ body {
     color: red !important;
     text-decoration: underline !important;
     transform: scale(1.2);
-    
 }
 
 .flexible-article-images-container, main {
-    width: calc((100% - 587px) / 3 + 587px);
+    width: calc((100% - 704px) / 3 + 704px);
     margin: 0 auto 41px;
-/*    padding: 0 50px;*/
+    padding: 0 10px;
+/*    background: white;*/
+}
+
+.masters-link a:link {
+    color: red;   
+}
+
+.masters-link a:visited {
+    color: red;   
+}
+
+.masters-link a:hover {
+    color: red; 
+    text-decoration: underline;
 }
 
 .header {
