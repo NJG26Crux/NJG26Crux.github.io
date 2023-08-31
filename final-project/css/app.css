@@ -351,6 +351,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 20;
 }
 
 .nav-buffer {
@@ -359,6 +360,27 @@ body {
 
 .top-pad-30 {
     padding-top: 30px;
+}
+
+.types-css h2, .types-css h4, .types-css li {
+    font-weight: bold;
+}
+
+.types-css p {
+    padding-left: 20px;
+}
+
+.types-css ul ul li {
+    font-weight: normal;
+/*    text-decoration: underline;*/
+}
+
+.types-css ul p {
+    margin-bottom: 8px;
+}
+
+.types-css-accent1 {
+    color: red !important;
 }
 
 .footer-buffer {
@@ -398,6 +420,57 @@ body {
 /*    border: 2px solid red !important;*/
 }
 
+.grid-container {
+    padding: 0;
+}
+
+.reveal, .modal {
+    padding: 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.no-pad-lft {
+    padding-left: 0;
+}
+
+.no-pad-rt {
+    padding-right: 0;
+}
+
+.no-marg {
+    margin: 0;
+}
+
+.pad-btm-20 {
+padding-bottom: 20px !important;
+}
+
+.modal-content {
+    max-width: 100%;
+/*    margin-top: 0 !important;*/
+/*    padding: 10px !important;*/
+}
+
+.no-hover:hover, .no-hover:visited, .no-hover:active, .no-hover:focus {
+    background-color: inherit;
+    color: inherit;
+}
+
+.card-section {
+    padding-bottom: 0;
+}
+
+.card-shadow {
+    box-shadow: 4px 6px 8px #888888;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
 #contact-submit {
     margin-left: auto;
 /*
@@ -433,10 +506,14 @@ body {
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     border: 1px solid #888;
     width: calc((100% - 704px) / 3 + 644px);
 /*  width: 80%;  Could be more or less, depending on screen size */
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* The Close Button */
@@ -472,3 +549,4 @@ body {
 }
 
 /*  End of My CSS   */
+

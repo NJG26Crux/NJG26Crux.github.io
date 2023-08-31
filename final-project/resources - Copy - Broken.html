@@ -51,13 +51,8 @@
             color: black !important;
         }  
         
-        .card p {
-            font-size: 12px !important;
-            padding-left: 0;
-        }
-        
         .marg-lft-50 .accordion-content p {
-/*            font-size: inherit !important;  16px */
+            font-size: 16px !important;
             font-weight: normal;
             text-decoration: none;
             color: black !important; 
@@ -70,18 +65,10 @@
         .card-section {
             padding-top: 5px;
         }
-
-        .height-172 {
-            height: 172px;
-        }        
         
-        .height-182 {
-            height: 182px;
-        }
-        
-        
-        .height-192 {
-            height: 192px;
+        .card p {
+            font-size: 12px !important;
+            padding-left: 0;
         }
         
         .height-212 {
@@ -90,10 +77,6 @@
         
         .height-232 {
             height: 232px;
-        }
-        
-        .height-242 {
-            height: 242px;
         }
         
 /*
@@ -127,11 +110,11 @@
                 <ul class="menu simple vertical medium-horizontal">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="history.html">History</a></li>
-                    <li><a  class="nav-selected" href="#l">Types</a></li>
+                    <li><a href="types.html">Types</a></li>
                     <li><a href="nearby.html">Nearby</a></li>
                     <li><a href="buying.html">Buying</a></li>
 <!--                    <li><a href="#">Calibrating</a></li>-->
-                    <li><a href="resources.html">Resources</a></li>
+                    <li><a class="nav-selected" href="#">Resources</a></li>
 <!--
                     <li>
                         <button type="button" class="button hollow topbar-responsive-button">Categories</button>
@@ -237,7 +220,7 @@
                             </li>
                             <li class="accordion-item" data-accordion-item>
                                 <a href="#" class="accordion-title">Two-Photon Polymerization (TPP)</a>
-                                <div class="accordion-content height-182" data-tab-content>
+                                <div class="accordion-content" data-tab-content>
                                     <div class="columns small-4 float-right">
                                         <div class="card button no-hover card-shadow myBtn_multi">
                                             <img src="images/types/micro-3D-printing.png">
@@ -277,6 +260,7 @@
                             <li class="accordion-item" data-accordion-item> 
                                 <a href="#" class="accordion-title">Lithography-based Metal Manufacturing (LMM)</a>
                                 <div class="accordion-content" data-tab-content>
+<!--
                                     <div class="columns small-4 float-right">
                                         <div class="card button no-hover card-shadow myBtn_multi">
                                             <img src="images/types/micro-3D-printing-LMM.png">
@@ -285,6 +269,7 @@
                                             </div>
                                         </div>
                                     </div>                                    
+-->
                                     <p>In LMM, metal powder is homogeneously dispersed in a light-sensitive resin and then selectively polymerized by exposure with blue light via a projector. After printing, the “green” parts have their polymer component removed, leaving fully metal “brown” parts that are finished in a sintering process in a furnace. Feedstocks include stainless steel, titanium, tungsten, brass, copper, silver, and gold.</p>                                
                                 </div>
                             </li>
@@ -324,15 +309,7 @@
                         <ul class="ul-css accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
                             <li class="accordion-item" data-accordion-item>
                                 <a href="#" class="accordion-title">Micro Selective Laser Sintering (μSLS)</a>
-                                <div class="accordion-content height-242" data-tab-content>
-                                    <div class="columns small-4 float-right">
-                                        <div class="card button no-hover card-shadow myBtn_multi">
-                                            <img src="images/types/micro-laser-sintering.png">>
-                                            <div class="card-section">
-                                                <p class="text-small">Micro Selective Laser<br>Sintering or μSLS<br>(Source: 3D MicroPrint)</p>
-                                            </div>
-                                        </div>
-                                    </div>                                    
+                                <div class="accordion-content" data-tab-content>
                                     <p>In μSLS, a layer of metal nanoparticle ink is coated onto a substrate and then dried to produce a uniform nanoparticle layer. Next, laser light that has been patterned using a digital micromirror array is used to heat and sinter the nanoparticles into the desired patterns. This set of steps is then repeated to build up each layer of the 3D part in the μSLS system.</p>
                                 </div>
                             </li>
@@ -341,14 +318,16 @@
                     <li class="accordion-item" data-accordion-item>
                         <a href="#" class="accordion-title">Laser Powder Bed Fusion (LPBF)</a>
                         <div class="accordion-content" data-tab-content>
+<!--
                             <div class="columns small-4 float-right">
                                 <div class="card button no-hover card-shadow myBtn_multi">
                                     <img src="images/types/Laser-powder-bed-fusion.png">
                                     <div class="card-section">
-                                        <p class="text-small">Laser Powder Bed Fusion (LPBF)</p>
+                                        <p class="text-small">Laser Powder Bed Fusion<br>or LPBF<br>(Source: GE Additive)</p>
                                     </div>
-                                </div>
-                            </div>                             
+                                </div> 
+                            </div>
+-->
                             <p>As a subtype of powder bed fusion, LPBF involves a bed of metal powder and a high-powered laser or several (up to 12). LPBF 3D printers use lasers to selectively fuse metal powder together layer-by-layer on a molecular basis until the model is complete. LPBF is a highly precise and accurate method of 3D printing and is commonly used for creating complex metal parts for aerospace, medical and industrial applications.</p>
                             <p>LPBF machines use common engineering alloys, such as stainless steels, nickel superalloys, and titanium alloys. There are dozens of metals available for the LPBF process.</p>
                         </div>
@@ -356,14 +335,6 @@
                     <li class="accordion-item" data-accordion-item>
                         <a href="#" class="accordion-title">Electron Beam Melting (EBM)</a>
                         <div class="accordion-content" data-tab-content>
-                            <div class="columns small-4 float-right">
-                                <div class="card button no-hover card-shadow myBtn_multi">
-                                    <img src="images/types/electron-beam-melting.png">
-                                    <div class="card-section">
-                                        <p class="text-small">Electron Beam Melting (EBM)</p>
-                                    </div>
-                                </div>
-                            </div>
                             <p>EBM, also called electron beam powder bed fusion (EB PBF), is a 3D printing method for metals similar to LPBF but uses an electron beam instead of a fiber laser. This technology is used to manufacture parts, such as titanium orthopedic implants, turbine blades for jet engines, and copper coils.</p>
                         </div>
                     </li>
@@ -386,14 +357,6 @@
                     <li class="accordion-item" data-accordion-item>
                         <a href="#" class="accordion-title">Material Jetting (M-Jet)</a>
                         <div class="accordion-content" data-tab-content>
-                            <div class="columns small-4 float-right">
-                                <div class="card button no-hover card-shadow myBtn_multi">
-                                    <img src="images/types/material-jetting-parts.png">
-                                    <div class="card-section">
-                                        <p class="text-small">Material Jetting (M-Jet)</p>
-                                    </div>
-                                </div>
-                            </div>                            
                             <p>Material jetting (M-Jet) for polymers is a 3D printing process where a layer of photosensitive resin is selectively deposited onto a build plate and cured with ultraviolet (UV) light. After one layer has been deposited and cured, the build platform is lowered down one layer thickness, and the process is repeated to build up a 3D object.</p>
                             <p>M-Jet combines the outstanding detail of resin 3D printing with speeds better than filament 3D printing (FDM) to create parts and prototypes in true-to-life color and texture.</p>  
                         </div>
@@ -438,14 +401,6 @@
                     <li class="accordion-item" data-accordion-item>
                         <a href="#" class="accordion-title">Metal Binder Jetting</a>
                         <div class="accordion-content" data-tab-content>
-                            <div class="columns small-4 float-right">
-                                <div class="card button no-hover card-shadow myBtn_multi">
-                                    <img src="images/types/Metal-Jet.png">
-                                    <div class="card-section">
-                                        <p class="text-small">Metal Binder Jetting</p>
-                                    </div>
-                                </div>
-                            </div>  
                             <p>Metal binder jetting is a very appealing technology for volume metal part production and to achieve lightweighting. Because binder jetting can print parts with complex pattern infills instead of being solid, the resulting parts are dramatically lighter while being as strong. Binder jetting’s porosity feature can also be used to achieve lighter end parts for medical applications, such as implants.</p>
                             <p>After printing and removing the parts from the bed of metal powder (a process called depowdering) some processes include a thermal curing stage before they’re heat-treated in a furnace (a process called sintering). Both the printing parameters and the sintering parameters are tuned for the specific part geometry, material, and desired density. Bronze or another metal is sometimes used to infiltrate the voids in a binder jetted part, resulting in zero porosity.</p>                       
                         </div>
@@ -453,29 +408,13 @@
                     <li class="accordion-item" data-accordion-item>
                         <a href="#" class="accordion-title">Plastic Binder Jetting (MJF, HSS, SAF)</a>
                         <div class="accordion-content" data-tab-content>
-                            <div class="columns small-4 float-right">
-                                <div class="card button no-hover card-shadow myBtn_multi">
-                                    <img src="images/types/Plastic-Binder-Jetting1.png">
-                                    <div class="card-section">
-                                        <p class="text-small">Plastic Binder Jetting (MJF, HSS, SAF)</p>
-                                    </div>
-                                </div>
-                            </div>  
                             <p>Polymer binder jetting begins with a polymer powder (usually a type of nylon) spread across a build platform in a thin layer. Then inkjet heads dispense a binder-like glue (and/or other fluids, including colored inks, fusible or radiation absorbing fluids, and magnetic fluids) precisely where the polymer should be joined on each layer.</p>
                             <p>Binder jetting variations without heat can be infilled with another material to boost strength. These cold binder jetting processes are also the ones that include colored inks and can produce multi-color parts used in medical modeling and product prototypes</p>                       
                         </div>
                     </li>
                     <li class="accordion-item" data-accordion-item>
                         <a href="#" class="accordion-title">Sand Binder Jetting</a>
-                        <div class="accordion-content height-212" data-tab-content>
-                            <div class="columns small-4 float-right">
-                                <div class="card button no-hover card-shadow myBtn_multi">
-                                    <img src="images/types/sand-mold.png">
-                                    <div class="card-section">
-                                        <p class="text-small">Sand Binder Jetting (Source: Castings Technology)</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="accordion-content" data-tab-content>
                             <p>Sand binder jetting is arguably not a distinct technology from plastic binder jetting but the printers and applications are different enough to earn a separate entry here. In fact, producing large sand-casting molds, models, and cores is one of the most common uses for binder jetting technology.</p>
                         </div>
                     </li>
@@ -498,73 +437,33 @@
                     <li class="accordion-item" data-accordion-item>
                         <a href="#" class="accordion-title">Laser Directed Energy Deposition</a>
                         <div class="accordion-content" data-tab-content>
-                            <div class="columns small-4 float-right">
-                                <div class="card button no-hover card-shadow myBtn_multi">
-                                    <img src="images/types/laser-metal-deposition.png"> 
-                                    <div class="card-section">
-                                        <p class="text-small">Laser Directed Energy Deposition</p>
-                                    </div>
-                                </div>
-                            </div>                            
                              <p>Laser Directed Energy Deposition (L-DED), also called laser metal deposition (LMD) or Laser Engineered Net Shaping (LENS), is a 3D printing technology using a metal powder or wire fed through one or more nozzles and fused via a powerful laser on a build platform or on a metal part. An object is built up layer by layer as the nozzle and laser move or as the part moves on a multiple-axis turntable.</p>                       
                         </div>
                     </li>
                     <li class="accordion-item" data-accordion-item>
                         <a href="#" class="accordion-title">Electron Beam Directed Energy Deposition</a>
                         <div class="accordion-content" data-tab-content>
-                            <div class="columns small-4 float-right">
-                                <div class="card button no-hover card-shadow myBtn_multi">
-                                    <img src="images/types/electron-beam-DED.png">
-                                    <div class="card-section">
-                                        <p class="text-small">Electron Beam Directed Energy Deposition</p>
-                                    </div>
-                                </div>
-                            </div>                              
                             <p>Electron beam DED, also called wire electron beam energy deposition, is a 3D printing process very similar to DED with a laser. It is carried out in a vacuum chamber, which produces very clean, high-quality metal. As a metal wire is fed through one or more nozzles, it is fused by an electron beam. Layers are built up individually, with the electron beam creating a tiny melt pool and the weld wire fed into the melt pool by a wire feeder.</p>                        
                         </div>
                     </li>
 
                     <li class="accordion-item" data-accordion-item>
-                        <a href="#" class="accordion-title">Wire Directed Energy Deposition</a> 
-                        <div class="accordion-content height-192" data-tab-content>
-                            <div class="columns small-4 float-right">
-                                <div class="card button no-hover card-shadow myBtn_multi">
-                                    <img src="images/types/WAAM-printing.png"> 
-                                    <div class="card-section">
-                                        <p class="text-small">Wire Directed Energy Deposition</p>
-                                    </div>
-                                </div>
-                            </div>                                
+                        <a href="#" class="accordion-title">Wire Directed Energy Deposition</a>
+                        <div class="accordion-content" data-tab-content>
                             <p>Wire Directed Energy Deposition, also known as Wire Arc Additive Manufacturing (WAAM), is 3D printing that uses energy in the form of plasma or wire arc to melt metal in wire form where it’s deposited layer on top of layer by a robotic arm onto a surface, such as a multi-axis turntable, to form a shape.</p>
                         </div>
                     </li>
 
                     <li class="accordion-item" data-accordion-item>
                         <a href="#" class="accordion-title">Cold Spray</a>
-                        <div class="accordion-content height-212" data-tab-content>
-                            <div class="columns small-4 float-right">
-                                <div class="card button no-hover card-shadow myBtn_multi">
-                                    <img src="images/types/Cold-Spray.png"> 
-                                    <div class="card-section">
-                                        <p class="text-small">Cold Spray (Source: Impact Innovations)</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="accordion-content" data-tab-content>
                              <p>Cold spray is a DED 3D printing technology that sprays metal powders at supersonic speeds to bond them without melting them, which produces almost no thermal stress that can produce hot-cracking or other common problems that can affect melt-based technologies.</p>                       
                         </div>
                     </li>
                     
                     <li class="accordion-item" data-accordion-item>
                         <a href="#" class="accordion-title">Molten Direct Energy Deposition</a>
-                        <div class="accordion-content  height-192" data-tab-content>
-                            <div class="columns small-4 float-right">
-                                <div class="card button no-hover card-shadow myBtn_multi">
-                                    <img src="images/types/aluminum-parts.png"> 
-                                    <div class="card-section">
-                                        <p class="text-small">Molten Direct Energy Deposition<br>(Source: Xerox)</p>
-                                    </div>
-                                </div>
-                            </div>                            
+                        <div class="accordion-content" data-tab-content>
                             <p>Molten Direct Energy Deposition is a 3D printing process that uses heat to melt (or near melt) metal, usually aluminum, then deposit it on a build plate layer by layer to form a 3D object.</p>
                         </div>
                     </li>
@@ -691,6 +590,7 @@
             </div>
         </div>
          
+<!--
         <div class="modal modal_multi">
             <div class="modal-content">
                 <span class="close close_multi"><sup>&times;</sup></span>
@@ -699,6 +599,7 @@
                 <p class="text-center">Tiny metal 3d printed parts made on an Incus 3D printing using LMM technology</p>  
             </div>
         </div>        
+-->
         
         <div  class="modal modal_multi">
             <div class="modal-content">
@@ -707,35 +608,19 @@
                 <img src="images/types/Powder-Bed-Fusion.png">
                 <p class="text-center">Energy, typically from a laser, fuses specific points on the powder layer, then another powder layer is deposited and fused to the previous layer.</p>   
             </div>
-        </div>
-          
-        <div class="modal modal_multi">
-            <div class="modal-content">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>Micro Selective Laser Sintering (μSLS)</b></p>
-                <img src="images/types/micro-laser-sintering.png">
-                <p class="text-center">Metal 3D microprinting from 3D MicroPrint. μSLS uses a laser to sinter<br>powdered materials, typically metal not plastic.</p>    
-            </div>
-        </div>
-          
+        </div>        
+        
+<!--
         <div class="modal modal_multi">
             <div class="modal-content">
                 <span class="close close_multi"><sup>&times;</sup></span>
                 <p class="text-center"><b>Laser Powder Bed Fusion (LPBF)</b></p>
                 <img src="images/types/Laser-powder-bed-fusion.png">
-                <p class="text-center">Metal laser powder bed fusion process commonly used for creating complex<br>metal parts for aerospace, medical and industrial applications</p> 
-            </div>
-        </div>
- 
-        <div class="modal modal_multi">
-            <div class="modal-content">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>Electron Beam Melting (EBM)</b></p>
-                <img src="images/types/electron-beam-melting.png">
-                <p class="text-center">The electron beam generates more power and heat, which is required for certain metals<br>and applications. The build chamber temperature can reach up to 1,000 °C<br>and in some cases, even higher.</p>
+                <p class="text-center">Metal laser powder bed fusion process commonly used for creating complex metal parts for aerospace, medical and industrial applications.</p>    
             </div>
         </div>        
-    
+-->
+      
          <div  class="modal modal_multi">
             <div class="modal-content">
                 <span class="close close_multi"><sup>&times;</sup></span>
@@ -743,54 +628,17 @@
                 <img src="images/types/Material-Jetting.png">
                 <p class="text-center">Tiny droplets of photopolymers or wax are deposited and then solidified or cured (when exposed to light) on a build plate one layer at a time.</p>
             </div>
-        </div> 
-          
-        <div class="modal modal_multi">
-            <div class="modal-content">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>Material Jetting (M-Jet)</b></p>
-                <img src="images/types/material-jetting-parts.png">
-                <p class="text-center">found at automakers, industrial design firms, art studios, hospitals, and<br>all types of product manufacturers looking to create accurate prototypes<br>to test concepts and get products to market faster.</p> 
-            </div>
-        </div>        
+        </div>  
         
         <div  class="modal modal_multi">
             <div class="modal-content">
                 <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>BINDER JETTING</b></p>
+                <p class="text-center"><b>Material Jetting (M-Jet)</b></p>
                 <img src="images/types/Binder-Jetting.png">
                 <p class="text-center">A liquid bonding agent, deposited from inkjets, selectively binds regions<br>of a layer of powder (metal, plastic, ceramic, wood, sugar, etc.).</p>   
             </div>
         </div>
         
-        <div class="modal modal_multi">
-            <div class="modal-content">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>Metal Binder Jetting</b></p>
-                <img src="images/types/Metal-Jet.png">
-                <p class="text-center">Right off the printer, parts basically consist of metal particles bound together with a polymer adhesive. These so-called “green parts” are fragile and not usable as is. After printing and removing the parts from the bed of metal powder (a process called depowdering) they’re heat-treated in a furnace<br>(a process called sintering).</p>
-            </div>
-        </div>
-         
-        <div class="modal modal_multi">
-            <div class="modal-content">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>Plastic Binder Jetting (MJF, HSS, SAF)</b></p>
-                <img src="images/types/Plastic-Binder-Jetting1.png">
-                <p class="text-center">Above: Polymer parts made with various powder and fluid 3D printing technologies: Stratasys Selective Absorption Fusion, HP Multi Jet Fusion, and Voxeljet High Speed Sintering.<br>Below - Some binder jetting processes can include colored inks for full-color models, while others, like this SAF from Stratasys produce parts that can easily be dyed after printing (Source: Stratasys)</p>
-                <img src="images/types/Plastic-Binder-Jetting2.png"> 
-            </div>
-        </div>
-          
-        <div class="modal modal_multi">
-            <div class="modal-content">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>Sand Binder Jetting</b></p>
-                <img src="images/types/sand-mold.png">
-                <p class="text-center">3D printed sand molds and cores can have an accuracy of ± 0.25mm and printed is a few days.<br>The future of industrial development continues to place high demands on foundries and suppliers.<br>Sand 3D printing is at the beginning of its potential</p>    
-            </div>
-        </div>        
-       
          <div  class="modal modal_multi">
             <div class="modal-content">
                 <span class="close close_multi"><sup>&times;</sup></span>
@@ -799,52 +647,6 @@
                 <p class="text-center">Metal material is fed and fused by powerful energy at the same time<br>that it’s deposited (it has a lot in common with welding).</p>   
             </div>
         </div>
-         
-        <div class="modal modal_multi">
-            <div class="modal-content">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>Laser Directed Energy Deposition</b></p>
-                <img src="images/types/laser-metal-deposition.png">
-                <p class="text-center">Metals commonly used in this process include stainless steels, titanium, and nickel alloys.<br>This printing method is often used to repair high-end aerospace and automotive components,<br>such as jet engine blades, but it is also used to produce entire components.</p>   
-            </div>
-        </div>
-        
-        <div class="modal modal_multi">
-            <div class="modal-content pad-btm-20">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>Electron Beam Directed Energy Deposition</b></p>
-                <img src="images/types/electron-beam-DED.png">
-                <p class="text-center no-marg">Electron beams are chosen for DED when working with high-performance metals and reactive metals, such as alloys of copper, titanium, cobalt, and nickel.</p>
-                <img src="images/types/Wire-electron-beam-deposition.png">
-            </div>
-        </div>
-         
-        <div class="modal modal_multi">
-            <div class="modal-content">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>Wire Directed Energy Deposition</b></p>
-                <img src="images/types/WAAM-printing.png">
-                <p class="text-center">This method is chosen over similar technologies involving lasers or electron beams because it doesn’t require a sealed chamber and it can use the same metals (sometimes the exact same material) as traditional welding.</p>
-            </div>
-        </div>
-         
-        <div class="modal modal_multi">
-            <div class="modal-content">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>Cold Spray</b></p>
-                <img src="images/types/Cold-Spray.png">
-                <p class="text-center">recently, several companies have adapted cold spray for additive manufacturing because it can layer metal in exact geometries up to several centimeters at about 50 to 100 times higher speed than typical metal 3D printers, and there’s no need for inert gases or vacuum chambers.</p>
-            </div>
-        </div>
-          
-        <div class="modal modal_multi">
-            <div class="modal-content">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>Molten Direct Energy Deposition</b></p>
-                <img src="images/types/aluminum-parts.png">
-                <p class="text-center">Variations on this technology are in development, but molten metal 3D printers are rare, the potential benefit of using heat to melt and then deposit metals is the ability to use less energy than other DED processes and potentially use recycled metal directly as feedstock instead of wire or highly processed metal powders.</p>   
-            </div>
-        </div>        
         
         <div  class="modal modal_multi">
             <div class="modal-content">
@@ -856,16 +658,8 @@
         </div>     
  
        
-<!--       Start Template    --
-        <div class="modal modal_multi">
-            <div class="modal-content">
-                <span class="close close_multi"><sup>&times;</sup></span>
-                <p class="text-center"><b>GROUP NAME</b></p>    <-- Add GROUP NAME in Caps --
-                <img src="images/types/#">                      <-- Add FILE NAME Here --
-                <p class="text-center">DESCRIPTION</p>          <-- Add DESCRIPTION Here --     
-            </div>
-        </div>
-<--        End Template-->
+        
+
 
         
         <div class="footer-buffer"></div>
