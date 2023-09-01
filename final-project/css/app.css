@@ -135,18 +135,10 @@
 /*  Start - FULL WIDTH TESTIMONIAL - https://get.foundation/building-blocks/blocks/full-width-testimonial.html  */
 
 .full-width-testimonial {
-/*  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("https://unsplash.it/2000/1200/?image=1011");*/
-/*    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("https://www.kisscom.co.uk/media/pages/news/3d-printing-a-world-of-possibilities/5824bcf0fe-1666776023/blog_31.08.18.png");*/
-/*    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("images/full-width-testimonial-background.png");*/
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("../images/full-width-testimonial-background.png");
     background-repeat: no-repeat;
     background-position: center center;
-/*
-    Width: 100%;
-    height: 600px;
-*/
     margin-top: 56px;
-/*    border: 2px solid red;*/
 }
 
 .full-width-testimonial-icon .quote-path {
@@ -202,7 +194,6 @@
   font-size: 1.2em;
   font-weight: 600;
   color: #ffffff;
-/*  text-transform: uppercase;*/
   letter-spacing: 1.5px;
   padding-bottom: 0;
   margin-bottom: 0.2em;
@@ -306,15 +297,6 @@
 
 body {
     background: #cccccc;
-/*
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-*/
-/*
-    width: 77.78%;
-    margin: 0 auto;
-*/
 }
 
 .nav-selected {
@@ -327,7 +309,6 @@ body {
     width: calc((100% - 704px) / 3 + 714px);
     margin: 56px auto 41px;
     padding: 0 10px;
-/*    background: white;*/
 }
 
 .index-main {
@@ -372,7 +353,6 @@ body {
 
 .types-css ul ul li {
     font-weight: normal;
-/*    text-decoration: underline;*/
 }
 
 .types-css ul p {
@@ -415,9 +395,8 @@ body {
     margin: 0;
 }
 
-.modal-button-css p .button { /*   p .button  */
+.modal-button-css p .button { 
     margin: 4px 10px;
-/*    border: 2px solid red !important;*/
 }
 
 .grid-container {
@@ -450,8 +429,6 @@ padding-bottom: 20px !important;
 
 .modal-content {
     max-width: 100%;
-/*    margin-top: 0 !important;*/
-/*    padding: 10px !important;*/
 }
 
 .no-hover:hover, .no-hover:visited, .no-hover:active, .no-hover:focus {
@@ -473,14 +450,6 @@ padding-bottom: 20px !important;
 
 #contact-submit {
     margin-left: auto;
-/*
-    width: 72px;
-    height: 14.4px;
-    margin: 4px 10px;
-    padding: 12.24px 14.0px;
-    font-size: 0.9rem;
-    font-weight: 400;
-*/
 }
 
 #contact-submit-div {
@@ -546,6 +515,68 @@ padding-bottom: 20px !important;
         padding-left: 12px;
         margin: 0 auto; 
     }
+}
+
+/*  Start of CSS for style.html   */
+.flexible-article-images-container, main {
+    background: white;
+    min-height: 100%;
+}
+
+.float-right {
+    float: left;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.accordion-item a {
+    font-size: 16px !important;
+    font-weight: bold;
+    text-decoration: none;
+    color: black !important;
+}
+
+.accordion-content p {
+    font-size: 16px !important;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;         
+}
+
+.marg-lft-50 {
+    margin-left: 50px;
+}
+
+.marg-lft-50 .accordion-item a {
+    font-size: 16px !important;
+    font-weight: normal;
+    text-decoration: underline;
+    color: black !important;
+}  
+
+.card p {
+    font-size: 12px !important;
+    padding-left: 0;
+}
+
+.marg-lft-50 .accordion-content p {
+    font-weight: normal;
+    text-decoration: none;
+    color: black !important; 
+}
+
+.card {
+    padding: 0 0 5px 0;
+}
+
+.card-section {
+    padding-top: 5px;
+}
+
+.accordion-content {
+    overflow: auto;
 }
 
 /*  End of My CSS   */
